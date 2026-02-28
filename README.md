@@ -1,4 +1,4 @@
-# KrishiOS - Smart Farming for Bangladesh 🌾
+# 🌾 KrishiOS: The Intelligent Farming Operating System
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
@@ -6,109 +6,139 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.io/)
 
-**KrishiOS** is a comprehensive, decision-first farming operating system designed to empower Bangladeshi farmers with AI-driven insights, advanced farm management tools, and real-time market data. Our mission is to bridge the digital divide in agriculture by providing precision tools to optimize yields and maximize profitability.
+**KrishiOS** is a next-generation, decision-first farming operating system specifically engineered to modernize Bangladeshi agriculture. By integrating AI-driven advisory, comprehensive farm management, and real-time market economics, KrishiOS empowers farmers to transition from traditional methods to data-backed precision agriculture.
 
 ---
 
-## 🌟 Key Features
-
-### 🤖 AI Smart Advisory
-*   **Instant Consultation**: AI-powered diagnosis for crop diseases and pest management.
-*   **Expert Advice**: Real-time cultivation techniques tailored to local soil and climate.
-
-### 📊 Production & Farm Management
-*   **Holistic Tracking**: Specialized logs for crops, livestock, and aquaculture (fish farming).
-*   **Growth Monitoring**: Historical data analysis to monitor productivity over time.
-
-### 💰 Agricultural Finance
-*   **Smart Accounting**: Track specialized agricultural income and expenses.
-*   **Profit Analysis**: Insightful dashboards to understand your farm's financial health.
-
-### 📈 Marketplace & Real-time Data
-*   **Live Market Prices**: Stay updated with the latest crop prices across different regions in Bangladesh.
-*   **Equipment Marketplace**: A dedicated hub for buying and selling farming machinery and supplies.
-
-### 📅 Smart Scheduler & Utility
-*   **Task Automation**: Automated reminders for irrigation, fertilization, and vaccination.
-*   **Weather Engine**: Hyper-local weather forecasts with actionable "Do's and Don'ts" for farmers.
-*   **Bilingual Support**: Fully localized in both **Bangla (বাংলা)** and **English**.
+## 🚀 Vision
+To bridge the digital gap in rural agriculture by providing accessible, localized, and intelligent tools that optimize crop yields, reduce waste, and maximize the economic potential of every farm in Bangladesh.
 
 ---
 
-## 🛠️ Technology Stack
+## ✨ Core Features
 
-| Component | Technology |
+### 🤖 AI-Powered Smart Advisory
+*   **Disease Diagnosis**: Instant AI analysis of crop diseases and pest infestations with recommended treatments.
+*   **Personalized Cultivation**: Real-time expert advice tailored to local soil composition, weather patterns, and seasonality.
+
+### 🚜 Holistic Farm Management
+*   **Multi-Sector Logging**: Specialized management modules for **Crops**, **Livestock**, and **Aquaculture** (Fish Farming).
+*   **Predictive Analytics**: Historical data tracking to forecast productivity and identify growth bottlenecks.
+
+### 💰 Agricultural Finance & ERP
+*   **Precision Accounting**: Track agricultural specific income and expenses with automated categorization.
+*   **Profitability Dashboards**: Visual financial health indicators and ROI analysis for different farm segments.
+
+### 🛒 Integrated Ecosystem
+*   **Live Market Intelligence**: Real-time price tracking across major Bangladeshi regional markets to ensure fair trade.
+*   **Equipment Hub**: A dedicated marketplace for buying, selling, and renting farming machinery and supplies.
+
+### 🛠️ Smart Utilities
+*   **Autonomous Scheduler**: Automated reminders for critical tasks like irrigation, fertilization, and vaccination cycles.
+*   **Hyper-Local Weather**: Advanced weather engine providing "Actionable Weather" (specific tasks to do or avoid based on forecast).
+*   **Bilingual Accessibility**: Full localized support for **Bangla (বাংলা)** and **English**.
+
+---
+
+## 💻 Tech Stack
+
+| Layer | Technology |
 | :--- | :--- |
-| **Frontend Framework** | React 18 with Vite |
-| **Language** | TypeScript |
-| **Styling** | Tailwind CSS & shadcn/ui |
-| **Database & Auth** | Supabase (PostgreSQL) |
+| **Frontend** | React 18, Vite, TypeScript |
+| **Styling** | Tailwind CSS, shadcn/ui, Lucid Icons |
+| **Backend/DB** | Supabase (PostgreSQL), Edge Functions |
 | **State Management** | TanStack Query (React Query) |
-| **Data Visualization** | Recharts |
-| **Icons** | Lucide React |
+| **Charts** | Recharts |
+| **Forms/Validation** | React Hook Form, Zod |
+| **Testing** | Vitest, Testing Library |
 
 ---
 
-## 🚀 Getting Started
+## 📂 Project Architecture
+
+```text
+├── src/
+│   ├── components/  # Atomic UI components & shadcn primitives
+│   ├── pages/       # High-level route views (Dashboard, Advisory, Marketplace)
+│   ├── hooks/       # Custom business logic & Supabase data fetching
+│   ├── contexts/    # Global state (Auth, Theme, Localization)
+│   ├── lib/         # Utility functions & Supabase client config
+│   └── types/       # Global TypeScript interfaces
+├── supabase/        # Database migrations & Edge Functions
+└── public/          # Static assets & localization files
+```
+
+---
+
+## ⚙️ Getting Started
 
 ### Prerequisites
-
-- **Node.js**: v18.0 or higher
-- **Package Manager**: npm, bun, or yarn
+- [Node.js](https://nodejs.org/) (v18.0 or higher)
+- [Bun](https://bun.sh/) or npm
 
 ### Installation
 
-1.  **Clone the Repository**
-    ```bash
-    git clone https://github.com/sohanfardin/krishios.git
-    cd krishios
-    ```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/sohancreation/krishios.git
+   cd krishios
+   ```
 
-2.  **Install Dependencies**
-    ```bash
-    npm install
-    ```
+2. **Install Dependencies**
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
 
-3.  **Environment Configuration**
-    Create a `.env` file in the root directory:
-    ```env
-    VITE_SUPABASE_URL=your_supabase_url
-    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-    ```
+3. **Configure Environment**
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-4.  **Launch Development Server**
-    ```bash
-    npm run dev
-    ```
-
----
-
-## 📂 Project Structure
-
-- `src/components`: Modular UI components built with Radix UI and shadcn.
-- `src/pages`: Functional views (Dashboard, Finance, AI Advisory, Marketplace).
-- `src/hooks`: Custom React hooks for business logic and Supabase integration.
-- `src/contexts`: Global state management for Authentication and Localization.
-- `supabase/`: Migration scripts and Edge Functions for backend logic.
+4. **Start Development Server**
+   ```bash
+   npm run dev
+   ```
 
 ---
 
-## 📄 License
+## 🧪 Testing
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+KrishiOS maintains high code quality standards through unit and integration testing.
+
+```bash
+# Run tests once
+npm run test
+
+# Run tests in watch mode
+npm run test:watch
+```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+We welcome contributions from the community! Whether it's fixing bugs, adding features, or improving documentation:
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. **Fork** the repository
+2. **Create** your feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
 
 ---
 
-Built with ❤️ for the farmers of Bangladesh by **[Sohan Fardin](https://github.com/sohanfardin)**.
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 📬 Contact & Support
+
+**Sohan Fardin** - [GitHub Profile](https://github.com/sohanfardin)
+
+Built with ❤️ for the resilient farmers of Bangladesh.
