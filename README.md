@@ -1,77 +1,114 @@
 # KrishiOS - Smart Farming for Bangladesh 🌾
 
-KrishiOS is a comprehensive, decision-first farming operating system designed to empower Bangladeshi farmers with AI-driven insights, farm management tools, and real-time market data. Our mission is to bridge the digital divide in agriculture and provide farmers with the precision tools they need to optimize yields and maximize profits.
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.io/)
 
-## 🚀 Key Features
-
-- **🤖 AI Smart Advisory**: Instant AI-powered consultation for crop diseases, cultivation techniques, and pest management.
-- **📊 Production Tracking**: Comprehensive logs for crops, livestock, and fish farming to monitor growth and productivity.
-- **💰 Finance Management**: Track income and expenses specifically tailored for agricultural businesses.
-- **📈 Marketplace & Prices**: Real-time market prices across Bangladesh and a dedicated marketplace for farming equipment and products.
-- **📅 Smart Scheduler**: Never miss a watering, fertilization, or vaccination date with automated farm tasks.
-- **🌦️ Weather Engine**: Hyper-local weather forecasts with actionable farming advice based on conditions.
-- **🇧🇩 Multi-language Support**: Fully accessible in both **Bangla** and **English**.
-
-## 🛠️ Tech Stack
-
-- **Frontend**: React 18, TypeScript, Vite
-- **Styling**: Tailwind CSS, shadcn/ui
-- **Backend / Database**: Supabase (PostgreSQL, Edge Functions)
-- **State Management**: TanStack Query (React Query)
-- **UI Components**: Lucide Icons, Recharts (for data visualization)
-
-## 📦 Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or bun
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/sohanfardin/krishios.git
-   cd krishios
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   Create a `.env` file in the root directory and add your Supabase credentials:
-   ```env
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
-
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-## 🚀 Deployment
-
-This project is configured for automated deployment to **GitHub Pages** via GitHub Actions.
-
-1. **Push to Main**: Any push to the `main` branch triggers the deployment workflow.
-2. **Settings**: Ensure your repository settings under **Pages** are set to use **GitHub Actions** as the source.
-3. **URL**: Your site will be live at `https://sohanfardin.github.io/krishios/`
-
-## 📂 Project Structure
-
-- `src/components`: Reusable UI components.
-- `src/pages`: Main application views (Dashboard, Finance, AI, etc.).
-- `src/hooks`: Custom React hooks for data fetching and logic.
-- `src/contexts`: React Context providers for global state (Auth, Language).
-- `supabase/functions`: Backend logic hosted as Supabase Edge Functions.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+**KrishiOS** is a comprehensive, decision-first farming operating system designed to empower Bangladeshi farmers with AI-driven insights, advanced farm management tools, and real-time market data. Our mission is to bridge the digital divide in agriculture by providing precision tools to optimize yields and maximize profitability.
 
 ---
 
-Built with ❤️ for the farmers of Bangladesh by **Sohan Fardin**.
+## 🌟 Key Features
+
+### 🤖 AI Smart Advisory
+*   **Instant Consultation**: AI-powered diagnosis for crop diseases and pest management.
+*   **Expert Advice**: Real-time cultivation techniques tailored to local soil and climate.
+
+### 📊 Production & Farm Management
+*   **Holistic Tracking**: Specialized logs for crops, livestock, and aquaculture (fish farming).
+*   **Growth Monitoring**: Historical data analysis to monitor productivity over time.
+
+### 💰 Agricultural Finance
+*   **Smart Accounting**: Track specialized agricultural income and expenses.
+*   **Profit Analysis**: Insightful dashboards to understand your farm's financial health.
+
+### 📈 Marketplace & Real-time Data
+*   **Live Market Prices**: Stay updated with the latest crop prices across different regions in Bangladesh.
+*   **Equipment Marketplace**: A dedicated hub for buying and selling farming machinery and supplies.
+
+### 📅 Smart Scheduler & Utility
+*   **Task Automation**: Automated reminders for irrigation, fertilization, and vaccination.
+*   **Weather Engine**: Hyper-local weather forecasts with actionable "Do's and Don'ts" for farmers.
+*   **Bilingual Support**: Fully localized in both **Bangla (বাংলা)** and **English**.
+
+---
+
+## 🛠️ Technology Stack
+
+| Component | Technology |
+| :--- | :--- |
+| **Frontend Framework** | React 18 with Vite |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS & shadcn/ui |
+| **Database & Auth** | Supabase (PostgreSQL) |
+| **State Management** | TanStack Query (React Query) |
+| **Data Visualization** | Recharts |
+| **Icons** | Lucide React |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js**: v18.0 or higher
+- **Package Manager**: npm, bun, or yarn
+
+### Installation
+
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/sohanfardin/krishios.git
+    cd krishios
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Environment Configuration**
+    Create a `.env` file in the root directory:
+    ```env
+    VITE_SUPABASE_URL=your_supabase_url
+    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
+
+4.  **Launch Development Server**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 📂 Project Structure
+
+- `src/components`: Modular UI components built with Radix UI and shadcn.
+- `src/pages`: Functional views (Dashboard, Finance, AI Advisory, Marketplace).
+- `src/hooks`: Custom React hooks for business logic and Supabase integration.
+- `src/contexts`: Global state management for Authentication and Localization.
+- `supabase/`: Migration scripts and Edge Functions for backend logic.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+Built with ❤️ for the farmers of Bangladesh by **[Sohan Fardin](https://github.com/sohanfardin)**.
